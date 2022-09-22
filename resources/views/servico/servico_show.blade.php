@@ -15,7 +15,6 @@
 
       <p><strong>id:</strong> {{ $servico->id                  }}</p>
       <p><strong>nome:</strong> {{ $servico->nome              }}</p>
-      <p><strong>quantidade:</strong> {{ $servico->quantidade  }}</p>
       <p><strong>valor:</strong> R$ {{ $servico->valor         }}</p>
       <p><strong>criação:</strong> {{ $servico->created_at     }}</p>
 

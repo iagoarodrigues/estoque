@@ -1,4 +1,4 @@
-<!-- resources/views/produto.create.php -->
+<!-- resources/views/salao.create.php -->
  
 @extends('layout.app')
  
@@ -7,22 +7,19 @@
 @section('sidebar')
     @parent
  
-      <p>Produto - Edit</p>
+      <p>Salao - Edit</p>
 @endsection
 
 @section('content')
       <p>Formulário</p>
 
-      {!! Form::open(['url' => 'produto/' . $produto->id, 'method' => 'put']) !!}
+      {!! Form::open(['url' => 'salao/' . $salao->id, 'method' => 'put']) !!}
 
       {{  Form::label('nome', 'Nome:') }} <br>
-      {{  Form::text('nome', $produto->nome) }} <br><br>
+      {{  Form::text('nome', $salao->nome) }} <br><br>
 
-      {{  Form::label('quantidade', 'Quantidade:') }} <br>
-      {{  Form::text('quantidade',  $produto->quantidade) }} <br><br>
-
-      {{  Form::label('valor', 'Valor:') }} <br>
-      {{  Form::text('valor',  $produto->valor) }} <br><br>
+      {{  Form::label('gerente_id', 'Gerente:') }} <br>
+      {{  Form::text('gerente_id',  $salao->gerente_id) }} <br><br>
 
       {{  Form::submit('Enviar') }}
 

@@ -28,12 +28,6 @@
       {{  Form::label('nome', 'Nome:') }} <br>
       {{  Form::text('nome') }} <br><br>
 
-      {{  Form::label('quantidade', 'Quantidade:') }} <br>
-      {{  Form::text('quantidade') }} <br><br>
-
-      {{  Form::label('valor', 'Valor:') }} <br>
-      {{  Form::text('valor') }} <br><br>
-
       {{  Form::submit('Enviar') }}
 
       {!! Form::close() !!}

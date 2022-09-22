@@ -15,8 +15,9 @@
 
       <p><strong>id:</strong> {{ $usuario->id                  }}</p>
       <p><strong>nome:</strong> {{ $usuario->nome              }}</p>
-      <p><strong>quantidade:</strong> {{ $usuario->quantidade  }}</p>
-      <p><strong>valor:</strong> R$ {{ $usuario->valor         }}</p>
+      <p><strong>cpf:</strong> {{ $usuario->cpf  }}</p>
+      <p><strong>telefone:</strong>  {{ $usuario->telefone         }}</p>
+      <p><strong>email:</strong>  {{ $usuario->email         }}</p>
       <p><strong>criação:</strong> {{ $usuario->created_at     }}</p>
 
     

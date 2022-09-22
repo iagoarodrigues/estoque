@@ -1,4 +1,4 @@
-<!-- resources/views/produto.index.php -->
+<!-- resources/views/salao.index.php -->
  
 @extends('layout.app')
  
@@ -7,7 +7,7 @@
 @section('sidebar')
     @parent
  
-      <p> Produto - Index </p>
+      <p> Salao - Index </p>
 @endsection
 
 @section('content')
@@ -18,16 +18,14 @@
     </div>
 @endif
 
-<a href="{{ url('produto/create') }}">CRIAR</a>
+<a href="{{ url('salao/create') }}">CRIAR</a>
 
       <p> Conteúdo </p>
 
     <table>
       <tr>
          <th>nome</th>
-         <th>quantidade</th>
-         <th>valor</th>
-         <th></th>
+         <th>gerente</th>
          <th></th>
          <th></th>
       </tr>
@@ -36,12 +34,11 @@
     
       <tr>
          <td>{{ $value->nome          }}</td>
-         <td>{{ $value->quantidade    }}</td>
-         <td>{{ $value->valor         }}</td>
-         <td><a href="{{ url('produto/' . $value->id) }}">Visualizar</a></td> 
-         <td><a href="{{ url('produto/' . $value->id . '/edit') }}">Editar</a></td>
+         <td>{{ $value->gerente_ide    }}</td>
+         <td><a href="{{ url('salao/' . $value->id) }}">Visualizar</a></td> 
+         <td><a href="{{ url('salao/' . $value->id . '/edit') }}">Editar</a></td>
          <td>
-          {!! Form::open(['url' => 'produto/' . $value->id, 'method' => 'delete']) !!}
+          {!! Form::open(['url' => 'salao/' . $value->id, 'method' => 'delete']) !!}
           {{  Form::submit('Deletar') }}
     
           {!! Form::close() !!}

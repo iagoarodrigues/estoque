@@ -18,9 +18,6 @@
       {{  Form::label('nome', 'Nome:') }} <br>
       {{  Form::text('nome', $servico->nome) }} <br><br>
 
-      {{  Form::label('quantidade', 'Quantidade:') }} <br>
-      {{  Form::text('quantidade',  $servico->quantidade) }} <br><br>
-
       {{  Form::label('valor', 'Valor:') }} <br>
       {{  Form::text('valor',  $servico->valor) }} <br><br>
 

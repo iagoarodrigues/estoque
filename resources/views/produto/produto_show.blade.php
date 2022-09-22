@@ -1,4 +1,4 @@
-<!-- resources/views/salao.index.php -->
+<!-- resources/views/produto.index.php -->
  
 @extends('layout.app')
  
@@ -7,17 +7,17 @@
 @section('sidebar')
     @parent
  
-      <p>Salao - Show </p>
+      <p>Produto - Show </p>
 @endsection
 
 @section('content')
       <p>Conteúdo</p>
 
-      <p><strong>id:</strong> {{ $salao->id                  }}</p>
-      <p><strong>nome:</strong> {{ $salao->nome              }}</p>
-      <p><strong>quantidade:</strong> {{ $salao->quantidade  }}</p>
-      <p><strong>valor:</strong> R$ {{ $salao->valor         }}</p>
-      <p><strong>criação:</strong> {{ $salao->created_at     }}</p>
+      <p><strong>id:</strong> {{ $produto->id                  }}</p>
+      <p><strong>nome:</strong> {{ $produto->nome              }}</p>
+      <p><strong>quantidade:</strong> {{ $produto->quantidade  }}</p>
+      <p><strong>valor:</strong> R$ {{ $produto->valor         }}</p>
+      <p><strong>criação:</strong> {{ $produto->created_at     }}</p>
 
     
 @endsection

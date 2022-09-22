@@ -25,19 +25,18 @@
     <table>
       <tr>
          <th>nome</th>
-         <th>quantidade</th>
-         <th>valor</th>
-         <th></th>
-         <th></th>
-         <th></th>
+         <th>cpf</th>
+         <th>telefone</th>
+         <th>email</th>
       </tr>
 
       @foreach ($clientes as $value)
     
       <tr>
          <td>{{ $value->nome          }}</td>
-         <td>{{ $value->quantidade    }}</td>
-         <td>{{ $value->valor         }}</td>
+         <td>{{ $value->cpf           }}</td>
+         <td>{{ $value->telefone      }}</td>
+         <td>{{ $value->email         }}</td>
          <td><a href="{{ url('cliente/' . $value->id) }}">Visualizar</a></td> 
          <td><a href="{{ url('cliente/' . $value->id . '/edit') }}">Editar</a></td>
          <td>

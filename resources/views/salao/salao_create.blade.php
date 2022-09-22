@@ -1,4 +1,4 @@
-<!-- resources/views/produto.create.php -->
+<!-- resources/views/salao.create.php -->
  
 @extends('layout.app')
  
@@ -7,7 +7,7 @@
 @section('sidebar')
     @parent
  
-      <p>Produto - Create</p>
+      <p>Salao - Create</p>
 @endsection
 
 @section('content')
@@ -23,16 +23,13 @@
       </div>
       @endif
 
-      {!! Form::open(['url' => 'produto/create']) !!}
+      {!! Form::open(['url' => 'salao/create']) !!}
 
       {{  Form::label('nome', 'Nome:') }} <br>
       {{  Form::text('nome') }} <br><br>
 
-      {{  Form::label('quantidade', 'Quantidade:') }} <br>
-      {{  Form::text('quantidade') }} <br><br>
-
-      {{  Form::label('valor', 'Valor:') }} <br>
-      {{  Form::text('valor') }} <br><br>
+      {{  Form::label('gerente_id', 'Gerente:') }} <br>
+      {{  Form::text('gerente_id') }} <br><br>
 
       {{  Form::submit('Enviar') }}
 
