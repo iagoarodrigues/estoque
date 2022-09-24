@@ -1,6 +1,6 @@
 <!-- resources/views/categoria.create.php -->
  
-@extends('layout.app')
+@extends('adminlte::page')
  
 @section('title', 'Page Title')
  

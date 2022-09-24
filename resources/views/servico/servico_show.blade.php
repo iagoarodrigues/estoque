@@ -1,6 +1,6 @@
 <!-- resources/views/servico.index.php -->
  
-@extends('layout.app')
+@extends('adminlte::page')
  
 @section('title', 'Page Title')
  

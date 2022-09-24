@@ -15,22 +15,19 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        Produto::create([
+        Categoria::create([
             'nome'          =>'Teclado',
-            'quantidade'    => 10,
-            'valor'         => 260
+           
         ]);
 
-        Produto::create([
+        Categoria::create([
             'nome'          =>'Mouse',
-            'quantidade'    => 5,
-            'valor'         => 150
+            
         ]);
 
-        Produto::create([
+        Categoria::create([
             'nome'          =>'Monitor 29',
-            'quantidade'    => 20,
-            'valor'         => 2200
+           
         ]);
 
     }

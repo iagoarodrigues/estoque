@@ -1,6 +1,6 @@
 <!-- resources/views/produto.index.php -->
  
-@extends('layout.app')
+@extends('adminlte::page')
  
 @section('title', 'Page Title')
  
@@ -35,6 +35,7 @@
       @foreach ($produtos as $value)
     
       <tr>
+         <td>{{ $value->id          }}</td>
          <td>{{ $value->nome          }}</td>
          <td>{{ $value->quantidade    }}</td>
          <td>{{ $value->valor         }}</td>

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('saloes', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->interged('gerente_id');
+          
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\cliente;
+use App\Models\Cliente;
 
 class ClienteController extends Controller
 {
@@ -16,12 +16,12 @@ class ClienteController extends Controller
     {
         //listar todos os cliente
         //dd ('ENTROU NO INDEX');
-        $cliente = cliente::orderBy('nome', 'ASC')->get();
+        $clientes = Cliente::orderBy('nome', 'ASC')->get();
 
         //select * from cliente order by nome asc;
         //dd($cliente);
 
-        return view('cliente.cliente_index', ['cliente' => $cliente]);
+        return view('cliente.cliente_index', ['cliente' => $clientes]);
     }
 
     /**
@@ -53,16 +53,16 @@ class ClienteController extends Controller
         ];
 
             $validated = $request->validate([
-                'nome'         => 'required|min:8',
+                'nome'         => 'required|min:3',
                 'quantidade'   => 'required|integer',
                 'valor'        => 'required',
         ], $messages);
         
-        $cliente = new cliente;
-        $cliente->nome           = $request->nome;
-        $cliente->quantidade     = $request->quantidade;
-        $cliente->valor          = $request->valor;
-        $cliente->save();
+        $clientes = new Cliente;
+        $clientes->nome           = $request->nome;
+        $clientes->quantidade     = $request->quantidade;
+        $clientes->valor          = $request->valor;
+        $clientes->save();
 
         return redirect('/cliente')->with('status', 'cliente criado com sucessso!');
     }
@@ -76,9 +76,9 @@ class ClienteController extends Controller
     public function show($id)
     {
         //dd('ENTROU NO SHOW');
-        $cliente = cliente::find($id);
+        $clientes = Cliente::find($id);
         //dd($cliente);
-        return view('cliente.cliente_show', ['cliente' => $cliente]);
+        return view('cliente.cliente_show', ['cliente' => $clientes]);
 
 
 
@@ -92,9 +92,9 @@ class ClienteController extends Controller
      */
     public function edit($id)
     {
-        $cliente = cliente::find($id);
+        $clientes = Cliente::find($id);
         //dd($cliente);
-        return view('cliente.cliente_edit', ['cliente' => $cliente]);
+        return view('cliente.cliente_edit', ['cliente' => $clientes]);
     }
 
     /**
@@ -107,11 +107,11 @@ class ClienteController extends Controller
     public function update(Request $request, $id)
     {
         //dd('UPDATE')
-        $cliente = cliente::find($id);
-        $cliente->nome          = $request->nome;
-        $cliente->quantidade    = $request->quantidade;
-        $cliente->valor         = $request->valor;
-        $cliente->save();
+        $clientes = Cliente::find($id);
+        $clientes->nome          = $request->nome;
+        $clientes->quantidade    = $request->quantidade;
+        $clientes->valor         = $request->valor;
+        $clientes->save();
 
         return redirect('/cliente')->with('status', 'cliente atualizado com sucesso!');
     }
@@ -125,8 +125,8 @@ class ClienteController extends Controller
     public function destroy($id)
     {
         //dd('DESTROY');
-        $cliente = cliente::find($id);
-        $cliente->delete();
+        $clientes = Cliente::find($id);
+        $clientes->delete();
 
         return redirect('/cliente')->with('status', 'cliente excluido com sucesso!');
 

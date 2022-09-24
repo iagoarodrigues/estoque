@@ -1,13 +1,13 @@
 <!-- resources/views/cliente.index.php -->
  
-@extends('layout.app')
+@extends('adminlte::page')
  
 @section('title', 'Page Title')
  
 @section('sidebar')
     @parent
  
-      <p> Produto - Index </p>
+      <p> Cliente - Index </p>
 @endsection
 
 @section('content')
@@ -28,6 +28,9 @@
          <th>cpf</th>
          <th>telefone</th>
          <th>email</th>
+         <th></th>
+         <th></th>
+         <th></th>
       </tr>
 
       @foreach ($clientes as $value)

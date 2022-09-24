@@ -15,22 +15,19 @@ class ClienteSeeder extends Seeder
      */
     public function run()
     {
-        Produto::create([
+        Cliente::create([
             'nome'          =>'Teclado',
-            'quantidade'    => 10,
-            'valor'         => 260
+          
         ]);
 
-        Produto::create([
+        Cliente::create([
             'nome'          =>'Mouse',
-            'quantidade'    => 5,
-            'valor'         => 150
+          
         ]);
 
-        Produto::create([
+        Cliente::create([
             'nome'          =>'Monitor 29',
-            'quantidade'    => 20,
-            'valor'         => 2200
+           
         ]);
 
     }

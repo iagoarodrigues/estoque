@@ -15,22 +15,19 @@ class ProfissionalSeeder extends Seeder
      */
     public function run()
     {
-        Produto::create([
+        Profissional::create([
             'nome'          =>'Teclado',
-            'quantidade'    => 10,
-            'valor'         => 260
+           
         ]);
 
-        Produto::create([
+        Profissional::create([
             'nome'          =>'Mouse',
-            'quantidade'    => 5,
-            'valor'         => 150
+          
         ]);
 
-        Produto::create([
+        Profissional::create([
             'nome'          =>'Monitor 29',
-            'quantidade'    => 20,
-            'valor'         => 2200
+            
         ]);
 
     }

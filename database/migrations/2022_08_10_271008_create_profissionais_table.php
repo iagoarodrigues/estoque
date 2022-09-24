@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('profissionais', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->integred('salao_id');
+           
             $table->timestamps();
         });
     }
