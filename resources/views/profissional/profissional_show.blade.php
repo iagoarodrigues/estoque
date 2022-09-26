@@ -15,8 +15,10 @@
 
       <p><strong>id:</strong> {{ $profissional->id                  }}</p>
       <p><strong>nome:</strong> {{ $profissional->nome              }}</p>
-      <p><strong>salao_id:</strong> {{ $profissional->salao_id      }}</p>
+      <p><strong>quantidade:</strong> {{ $profissional->quantidade  }}</p>
+      <p><strong>valor:</strong> R$ {{ $profissional->valor         }}</p>
       <p><strong>criação:</strong> {{ $profissional->created_at     }}</p>
+
 
     
 @endsection

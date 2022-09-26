@@ -53,7 +53,7 @@ class ProfissionalController extends Controller
         ];
 
             $validated = $request->validate([
-                'nome'         => 'required|min:8',
+                'nome'         => 'required|min:2',
                 'quantidade'   => 'required|integer',
                 'valor'        => 'required',
         ], $messages);
@@ -78,7 +78,7 @@ class ProfissionalController extends Controller
         //dd('ENTROU NO SHOW');
         $profissional = Profissional::find($id);
         //dd($profissional);
-        return view('profissional.produto_show', ['profissional' => $profissional]);
+        return view('profissional.profissional_show', ['profissional' => $profissional]);
 
 
 
@@ -94,7 +94,7 @@ class ProfissionalController extends Controller
     {
         $profissional = Profissional::find($id);
         //dd($profissional);
-        return view('profissional.produto_edit', ['profissional' => $profissional]);
+        return view('profissional.profissional_edit', ['profissional' => $profissional]);
     }
 
     /**

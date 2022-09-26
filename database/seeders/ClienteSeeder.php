@@ -17,17 +17,20 @@ class ClienteSeeder extends Seeder
     {
         Cliente::create([
             'nome'          =>'Teclado',
-          
+            'quantidade'    => 10,
+            'valor'         => 260
         ]);
 
         Cliente::create([
             'nome'          =>'Mouse',
-          
+            'quantidade'    => 5,
+            'valor'         => 150
         ]);
 
         Cliente::create([
             'nome'          =>'Monitor 29',
-           
+            'quantidade'    => 20,
+            'valor'         => 2200
         ]);
 
     }

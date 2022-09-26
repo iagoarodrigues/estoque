@@ -16,12 +16,12 @@ class SalaoController extends Controller
     {
         //listar todos os produtos
         //dd ('ENTROU NO INDEX');
-        $produtos = Salao::orderBy('nome', 'ASC')->get();
+        $saloes = Salao::orderBy('nome', 'ASC')->get();
 
         //select * from produtos order by nome asc;
         //dd($produtos);
 
-        return view('salao.salao_index', ['produtos' => $produtos]);
+        return view('salao.salao_index', ['saloes' => $saloes]);
     }
 
     /**
@@ -53,7 +53,7 @@ class SalaoController extends Controller
         ];
 
             $validated = $request->validate([
-                'nome'         => 'required|min:8',
+                'nome'         => 'required|min:2',
                 'quantidade'   => 'required|integer',
                 'valor'        => 'required',
         ], $messages);
@@ -94,7 +94,7 @@ class SalaoController extends Controller
     {
         $salao = Salao::find($id);
         //dd($salao);
-        return view('salao.produto_edit', ['salao' => $salao]);
+        return view('salao.salao_edit', ['salao' => $salao]);
     }
 
     /**

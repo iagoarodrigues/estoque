@@ -17,16 +17,20 @@ class SalaoSeeder extends Seeder
     {
         Salao::create([
             'nome'          =>'Teclado',
-         
+            'quantidade'    => 10,
+            'valor'         => 260
         ]);
 
         Salao::create([
             'nome'          =>'Mouse',
-         
+            'quantidade'    => 5,
+            'valor'         => 150
         ]);
 
         Salao::create([
             'nome'          =>'Monitor 29',
+            'quantidade'    => 20,
+            'valor'         => 2200
             
         ]);
 

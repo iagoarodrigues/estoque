@@ -24,17 +24,20 @@
 
     <table>
       <tr>
-         <th>nome</th>
-         <th>gerente</th>
-         <th></th>
+        <th>id</th>
+        <th>nome</th>
+        <th>quantidade</th>
+        <th>valor</th>
          <th></th>
       </tr>
 
-      @foreach ($produtos as $value)
+      @foreach ($saloes as $value)
     
       <tr>
+         <td>{{ $value->id          }}</td>
          <td>{{ $value->nome          }}</td>
-         <td>{{ $value->gerente_ide    }}</td>
+         <td>{{ $value->quantidade    }}</td>
+         <td>{{ $value->valor         }}</td>
          <td><a href="{{ url('salao/' . $value->id) }}">Visualizar</a></td> 
          <td><a href="{{ url('salao/' . $value->id . '/edit') }}">Editar</a></td>
          <td>

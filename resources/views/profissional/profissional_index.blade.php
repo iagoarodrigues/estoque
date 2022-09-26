@@ -32,11 +32,13 @@
          <th></th>
       </tr>
 
-      @foreach ($produtos as $value)
+      @foreach ($profissionais as $value)
     
       <tr>
-         <td>{{ $value->nome          }}</td>
-         <td>{{ $value->salao_id    }}</td>
+        <td>{{ $value->id          }}</td>
+        <td>{{ $value->nome          }}</td>
+        <td>{{ $value->quantidade    }}</td>
+        <td>{{ $value->valor         }}</td>
          <td><a href="{{ url('profissional/' . $value->id) }}">Visualizar</a></td> 
          <td><a href="{{ url('profissional/' . $value->id . '/edit') }}">Editar</a></td>
          <td>

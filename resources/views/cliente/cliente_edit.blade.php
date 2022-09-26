@@ -18,14 +18,11 @@
       {{  Form::label('nome', 'Nome:') }} <br>
       {{  Form::text('nome', $cliente->nome) }} <br><br>
 
-      {{  Form::label('cpf', 'CPF:') }} <br>
-      {{  Form::text('cpf',  $cliente->cpf) }} <br><br>
+      {{  Form::label('quantidade', 'Quantidade:') }} <br>
+      {{  Form::text('quantidade',  $cliente->quantidade) }} <br><br>
 
-      {{  Form::label('telefoner', 'Telefone:') }} <br>
-      {{  Form::text('telefone',  $cliente->telefone) }} <br><br>
-
-      {{  Form::label('email', 'Email:') }} <br>
-      {{  Form::text('email',  $cliente->email) }} <br><br>
+      {{  Form::label('valor', 'Valor:') }} <br>
+      {{  Form::text('valor',  $cliente->valor) }} <br><br>
 
       {{  Form::submit('Enviar') }}
 

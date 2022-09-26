@@ -15,11 +15,11 @@
 
       {!! Form::open(['url' => 'salao/' . $salao->id, 'method' => 'put']) !!}
 
-      {{  Form::label('nome', 'Nome:') }} <br>
-      {{  Form::text('nome', $salao->nome) }} <br><br>
+      {{  Form::label('quantidade', 'Quantidade:') }} <br>
+      {{  Form::text('quantidade',  $salao->quantidade) }} <br><br>
 
-      {{  Form::label('gerente_id', 'Gerente:') }} <br>
-      {{  Form::text('gerente_id',  $salao->gerente_id) }} <br><br>
+      {{  Form::label('valor', 'Valor:') }} <br>
+      {{  Form::text('valor',  $salao->valor) }} <br><br>
 
       {{  Form::submit('Enviar') }}
 

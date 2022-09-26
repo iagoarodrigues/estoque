@@ -24,21 +24,20 @@
 
     <table>
       <tr>
+         <th>id</th>
          <th>nome</th>
-         <th>CPF</th>
-         <th>telefone</th>
-         <th>email</th>
-         <th></th>
+         <th>quantidade</th>
+         <th>valor</th>
          <th></th>
       </tr>
 
       @foreach ($usuarios as $value)
     
       <tr>
-         <td>{{ $value->nome          }}</td>
-         <td>{{ $value->cpf           }}</td>
-         <td>{{ $value->telefone      }}</td>
-         <td>{{ $value->email         }}</td>
+        <td>{{ $value->id          }}</td>
+        <td>{{ $value->nome          }}</td>
+        <td>{{ $value->quantidade    }}</td>
+        <td>{{ $value->valor         }}</td>
          <td><a href="{{ url('usuario/' . $value->id) }}">Visualizar</a></td> 
          <td><a href="{{ url('usuario/' . $value->id . '/edit') }}">Editar</a></td>
          <td>

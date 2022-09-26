@@ -53,7 +53,7 @@ class UsuarioController extends Controller
         ];
 
             $validated = $request->validate([
-                'nome'         => 'required|min:8',
+                'nome'         => 'required|min:2',
                 'quantidade'   => 'required|integer',
                 'valor'        => 'required',
         ], $messages);

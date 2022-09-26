@@ -28,14 +28,11 @@
       {{  Form::label('nome', 'Nome:') }} <br>
       {{  Form::text('nome') }} <br><br>
 
-      {{  Form::label('cpf', 'CPF:') }} <br>
-      {{  Form::text('cpf') }} <br><br>
+      {{  Form::label('quantidade', 'Quantidade:') }} <br>
+      {{  Form::text('quantidade') }} <br><br>
 
-      {{  Form::label('telefone', 'Telefone:') }} <br>
-      {{  Form::text('telefone') }} <br><br>
-      
-      {{  Form::label('email', 'Email:') }} <br>
-      {{  Form::text('email') }} <br><br>
+      {{  Form::label('valor', 'Valor:') }} <br>
+      {{  Form::text('valor') }} <br><br>
 
       {{  Form::submit('Enviar') }}
 

@@ -17,17 +17,20 @@ class ProfissionalSeeder extends Seeder
     {
         Profissional::create([
             'nome'          =>'Teclado',
-           
+            'quantidade'    => 10,
+            'valor'         => 260
         ]);
 
         Profissional::create([
             'nome'          =>'Mouse',
-          
+            'quantidade'    => 5,
+            'valor'         => 150
         ]);
 
         Profissional::create([
             'nome'          =>'Monitor 29',
-            
+            'quantidade'    => 20,
+            'valor'         => 2200
         ]);
 
     }
